@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="exerciseForm">
+
+<div class="exerciseContainer">
+  <form>
+
+    <fieldset class="exerciseFieldSet">
+
+      <label for="name" class="exerciseLabel">Full Name:</label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Enter your name"
+        required
+        class="exerciseInput"
+      >
+
+      <label for="email" class="exerciseLabel">Email:</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+        class="exerciseInput"
+      >
+
+      <label for="position" class="exerciseLabel">Position:</label>
+      <select id="position" name="position" class="position" required>
+        <option value="" disabled selected>Choose Position</option>
+        <option value="developer">Developer</option>
+        <option value="designer">Designer</option>
+        <option value="manager">Manager</option>
+      </select>
+
+      <fieldset class="radio-group">
+
+        <legend class="time-legend">Availability</legend>
+
+        <input
+          id="full-time"
+          type="radio"
+          name="availability"
+          class="availability-btn"
+          checked
+        >
+        <label for="full-time" class="availability">Full-Time</label>
+
+        <input
+          id="part-time"
+          type="radio"
+          name="availability"
+          class="availability-btn"
+        >
+        <label for="part-time" class="availability">Part-Time</label>
+
+      </fieldset>
+
+      <label class="exerciseLabel" for="message">Why do you want this job?</label>
+      <textarea
+        id="message"
+        rows="4"
+        placeholder="Your message"
+        required
+        class="exerciseTextarea"
+      ></textarea>
+
+      <button type="submit" class="submiting-btn">Submit</button>
+
+    </fieldset>
+
+  </form>
+</div>
+
+</body>
+</html>

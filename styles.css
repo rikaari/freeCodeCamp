@@ -200,3 +200,237 @@ body.bdCard {
 #share:target, #send:target {
   display: block;
 }
+
+/* studentForm.css */
+body.studentForm {
+  background-color: MidnightBlue;
+  color: whitesmoke;
+}
+
+.studentContainer {
+    background-color: #ffffff1a;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    box-shadow: 0 5px 15px black;  
+}
+
+.center {
+  text-align: center;
+}
+
+.description {
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+
+fieldset {
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+fieldset legend {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+label:not(.contact-method) {
+  display: block;
+  margin: 10px 0;
+}
+
+body.studentForm input:not(.contact-method-radio-btn),
+body.studentForm textarea {
+  background-color: #ffffff1a;
+  width: 95%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+body.studentForm input,
+body.studentForm input::placeholder,
+body.studentForm textarea {
+  color: whitesmoke;
+}
+
+
+.contact-method-radio-btn {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  vertical-align: bottom;
+}
+
+.contact-method-radio-btn::before {
+  display: block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(3px, 3px) scale(0);
+  transition: all 0.3s ease-in;
+}
+
+.contact-method-radio-btn:checked::before {
+  transform: translate(3px, 3px) scale(1);
+  background-color: lightgreen;
+}
+
+.submit-btn {
+  cursor: pointer;
+  background-color: royalblue;
+  color: whitesmoke;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  display: block;
+  margin: auto;
+}
+
+.submit-btn:hover{
+  background-color: midnightblue;
+}
+
+/* exercise.css */
+*{
+  font-family: Josefin Sans, sans-serif;
+}
+
+body.exerciseForm{
+  background-color: #ffc300;
+  color: black;
+}
+
+.exerciseContainer{
+  background-color: #ffd60a;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 0 5px 15px black;
+}
+
+.exerciseFieldSet{
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #003566;
+}
+
+.exerciseLabel{
+  font-size: 1.2rem;
+}
+
+.exerciseLabel:not(.availability),
+textarea,
+.position{
+  display: block;
+  margin: 10px 0;
+}
+
+.exerciseInput:not(.availability-btn),
+.exerciseTextarea,
+.position{
+  background-color: #001d3d;
+  width: 95%;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid gray;
+  color: whitesmoke;
+}
+
+.exerciseInput::placeholder,
+.exerciseTextarea::placeholder{
+  color: whitesmoke;
+  font-size: 0.8rem;
+}
+
+.exerciseInput:focus:not(.availability-btn),
+.exerciseTextarea:focus,
+.position:focus{
+  border: 2px solid #000814;
+  outline: none;
+  box-shadow: 0 5px 5px #003566;
+  background-color: #f8fbff;
+  color: #001d3d;
+}
+
+.position:focus{
+  color: #003566;
+}
+
+.time-legend{
+  font-size: 1rem;
+}
+
+.availability-btn{
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #000814;
+  vertical-align: bottom;
+}
+
+.availability-btn::before{
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(3px,3px) scale(0);
+  transition: 0.3s ease;
+}
+
+.radio-group input[type="radio"]:checked::before{
+  transform: translate(3px,3px) scale(1);
+  background-color: #003566;
+}
+
+.radio-group input[type="radio"]:checked + label{
+  color: #003566;
+  font-weight: bold;
+}
+
+.exerciseInput:first-of-type:not(.availability-btn){
+  box-shadow: 0 5px 5px #003566;
+}
+
+.exerciseInput:valid:not(:focus):not(:placeholder-shown),
+.exerciseTextarea:valid:not(:focus):not(:placeholder-shown){
+  border: 1px solid lightgreen;
+}
+
+.exerciseInput:invalid:not(:focus):not(:placeholder-shown),
+.exerciseTextarea:invalid:not(:focus):not(:placeholder-shown){
+  border: 1px solid red;
+}
+
+.submiting-btn{
+  cursor: pointer;
+  background-color: #001d3d;
+  color: whitesmoke;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  display: block;
+  margin: auto;
+}
+
+.submiting-btn:hover{
+  color: #ffd60a;
+}
